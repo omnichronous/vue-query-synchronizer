@@ -1,7 +1,7 @@
 {
   "name": "@oarepo/vue-query-synchronizer",
   "version": "2.4.1",
-  "main": "dist/vue-query-synchronizer.esm.js",
+  "main": "vue-query-synchronizer.esm.js",
   "license": "MIT",
   "private": false,
   "devDependencies": {
@@ -36,7 +36,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "vue-cli-service serve --modern --port 8090",
     "demobuild": "vue-cli-service build --mode development --modern",
-    "build": "rimraf dist; bili -c bili.config.js src/library.js --plugins.vue --format esm --file-name vue-query-synchronizer.esm.js && copyfiles package.json README.md index.d.ts dist/",
+    "build": "rimraf dist; bili src/library.js --plugins.vue --format esm --file-name vue-query-synchronizer.esm.js && copyfiles package.json README.md index.d.ts dist/",
     "upload": "yarn build && npm publish --access public dist/",
     "toc": "markdown-toc --maxdepth 4 -i README.md"
   },
